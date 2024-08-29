@@ -7,14 +7,14 @@ order=[]
 m = 1
 Znstar = [i for i in range(1,n) if math.gcd(i,n)==1] # Zn* = {1,2,3,...,n-1} where gcd(i,n) = 1
 for i in Znstar:
-    print("i: ",i) # To check if the code is running
-    while (i ** m) % n != 1:
+    while pow(i,m,n) != 1:
         m+=1
     order.append(m)
     m=1
 
 print("Order of all elements in Zn*",order)
 exponent = max(order) #f
+owais = exponent
 print("Exponent of Zn*",exponent)
 # f = exponent ( it can be any positive integer multiple of exponent)
 while exponent % 2 == 0:
@@ -45,3 +45,4 @@ print("Count of Alpha Success: ",len(sucess_alpha))
 print("Alpha Failure: ",*failure_alpha)
 print("Count of Alpha Failure: ",len(failure_alpha))
 print("Success Probability: ",len(sucess_alpha)/len(Znplus))
+print("Exponent of Zn*",owais)

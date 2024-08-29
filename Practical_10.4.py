@@ -46,7 +46,7 @@ order=[]
 m = 1
 Znstar = [i for i in range(1,n) if math.gcd(i,n)==1] # Zn* = {1,2,3,...,n-1} where gcd(i,n) = 1
 for i in Znstar:
-    while (i ** m) % n != 1:
+    while pow(i,m,n) != 1:
         m+=1
     order.append(m)
     m=1
