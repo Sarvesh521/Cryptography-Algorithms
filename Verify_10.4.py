@@ -30,8 +30,7 @@ for i in Znplus: #Computing Probability of Success for all elements in Zn to ver
         sucess_alpha.append(i)
         print("Factors are1: ",g,n//g)
     else:
-        B = i**t
-        repB = B % n
+        repB = pow(i,t,n)
         ans=(math.gcd(repB +1,n))
         if (ans != 1) and (ans != n):
             print("Factors are2: ",ans,n//ans)
@@ -40,9 +39,9 @@ for i in Znplus: #Computing Probability of Success for all elements in Zn to ver
             print("Failure")
             failure_alpha.append(i)
 
-print("Alpha Success: ",*sucess_alpha)
+# print("Alpha Success: ",*sucess_alpha)
 print("Count of Alpha Success: ",len(sucess_alpha))
-print("Alpha Failure: ",*failure_alpha)
+# print("Alpha Failure: ",*failure_alpha)
 print("Count of Alpha Failure: ",len(failure_alpha))
 print("Success Probability: ",len(sucess_alpha)/len(Znplus))
 print("Exponent of Zn*",owais)
