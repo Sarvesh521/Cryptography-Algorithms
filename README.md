@@ -14,6 +14,7 @@ This project is an extension of the number theory course we completed earlier, w
 - **Fermat's Little Theorem**
 - **Euler's Phi Function**
 - **Discrete Logarithms**
+- **Reed Solomon Error Correcting Code**
 
 In this reading elective, we are diving deeper into more advanced number theory topics and implementing key algorithms from Shoup’s book. Our goal is to strengthen our theoretical understanding while gaining practical coding experience by translating these mathematical concepts into working code.
 
